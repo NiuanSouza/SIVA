@@ -127,12 +127,12 @@ export default function LoginPage() {
 
       <div className="demo-card" style={{ width: "90%", maxWidth: "500px", padding: "20px", backgroundColor: "rgba(240, 253, 244, 0.95)", border: "1px solid #bbf7d0", borderRadius: "16px", fontSize: "14px", color: "#166534", boxShadow: "0 4px 15px rgba(0,0,0,0.1)", zIndex: 10 }}>
         <strong style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "16px" }}>
-           ℹ️ Ambiente de Demonstração
+           ℹ️ Projeto de Teste
         </strong>
-        <p style={{ margin: "10px 0" }}>Este é um sistema de testes. Os dados são <strong>apagados automaticamente após 24 horas</strong>.</p>
+        <p style={{ margin: "10px 0" }}>Este é um projeto de teste. Os dados são <strong>excluídos após o uso (banco de dados resetado a cada reinício)</strong>.</p>
         <div style={{ marginTop: "16px", padding: "12px", backgroundColor: "white", borderRadius: "8px", border: "1px solid #dcfce7", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "10px" }}>
           <div>
-            <span style={{ fontSize: "12px", color: "#15803d", textTransform: "uppercase", fontWeight: "bold" }}>Matrícula Gestor</span>
+            <span style={{ fontSize: "12px", color: "#15803d", textTransform: "uppercase", fontWeight: "bold" }}>Matrícula Admin</span>
             <p style={{ margin: "4px 0", fontSize: "15px", fontFamily: "monospace" }}>10006</p>
           </div>
           <div>
