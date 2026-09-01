@@ -1,3 +1,4 @@
+"use client";
 import { API_BASE_URL } from "../lib/constants";
 import React, { useState, useEffect } from 'react';
 import { Modal } from './Modal';

@@ -1,5 +1,5 @@
-import { API_BASE_URL } from "../../../lib/constants";
 "use client";
+import { API_BASE_URL } from "../../../lib/constants";
 
 import React, { useState, useEffect } from "react";
 import { User, Bell, Shield, Smartphone, Monitor, Loader2, Camera } from "lucide-react";
