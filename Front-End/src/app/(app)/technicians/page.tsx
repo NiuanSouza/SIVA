@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../../lib/constants";
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -50,7 +51,7 @@ export default function TechniciansPage() {
 
   const loadUsers = async () => {
     try {
-      const response = await fetch("http://localhost:8080/user/technicians", {
+      const response = await fetch(`${API_BASE_URL}/user/technicians`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("siva_token")}` }
       });
       if (response.ok) {

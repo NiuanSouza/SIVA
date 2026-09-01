@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../lib/constants";
 import React, { useState } from 'react';
 import { Modal } from './Modal';
 import { Download, FileText, FileSpreadsheet, FileIcon } from 'lucide-react';
@@ -26,7 +27,7 @@ export function DownloadModal({ isOpen, onClose, exportUrlPath, defaultFileName 
     setLoadingFormat(format);
     
     // Replace {format} and {fileName} in the path
-    let url = `http://localhost:8080${exportUrlPath
+    let url = `${API_BASE_URL}${exportUrlPath
       .replace('{format}', format)
       .replace('{fileName}', fileName || defaultFileName)}`;
 

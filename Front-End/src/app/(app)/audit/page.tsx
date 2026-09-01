@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../../lib/constants";
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -26,7 +27,7 @@ export default function GlobalHistoryPage() {
   const fetchHistory = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8080/audit/history/all`, {
+      const response = await fetch(`${API_BASE_URL}/audit/history/all`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("siva_token")}`,
         },

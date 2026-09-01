@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../lib/constants";
 import React, { useState, useEffect } from 'react';
 import { Modal } from './Modal';
 import { useToast } from '../providers/ToastProvider';
@@ -33,7 +34,7 @@ export function AuditHistoryModal({ isOpen, onClose, entityType, entityId, title
   const fetchHistory = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8080/audit/history/${entityType}/${entityId}`, {
+      const response = await fetch(`${API_BASE_URL}/audit/history/${entityType}/${entityId}`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("siva_token")}` }
       });
       if (!response.ok) {

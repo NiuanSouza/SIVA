@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../../lib/constants";
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -76,7 +77,7 @@ export default function VehiclesPage() {
   // ================= FETCH DATA =================
   const loadVehicles = async () => {
     try {
-      const response = await fetch("http://localhost:8080/vehicle", {
+      const response = await fetch(`${API_BASE_URL}/vehicle`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("siva_token")}` }
       });
       if (response.ok) {
@@ -90,7 +91,7 @@ export default function VehiclesPage() {
 
   const loadCarTypes = async () => {
     try {
-      const response = await fetch("http://localhost:8080/vehicle/types", {
+      const response = await fetch(`${API_BASE_URL}/vehicle/types`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("siva_token")}` }
       });
       if (response.ok) {
@@ -104,7 +105,7 @@ export default function VehiclesPage() {
 
   const loadActiveCarTypes = async () => {
     try {
-      const response = await fetch("http://localhost:8080/vehicle/types/active", {
+      const response = await fetch(`${API_BASE_URL}/vehicle/types/active`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("siva_token")}` }
       });
       if (response.ok) {
@@ -250,7 +251,7 @@ export default function VehiclesPage() {
     }
 
     try {
-      const response = await fetch(`http://localhost:8080/vehicle/type/${t.id}/active-cars`, {
+      const response = await fetch(`${API_BASE_URL}/vehicle/type/${t.id}/active-cars`, {
         headers: { "Authorization": `Bearer ${localStorage.getItem("siva_token")}` }
       });
       if (response.ok) {

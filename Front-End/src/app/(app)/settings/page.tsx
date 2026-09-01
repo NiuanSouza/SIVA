@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../../lib/constants";
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -100,7 +101,7 @@ export default function SettingsPage() {
         form.append("foto", selectedFile);
         
         const token = localStorage.getItem("siva_token");
-        await fetch(`http://localhost:8080/user/upload-photo/${registration}`, {
+        await fetch(`${API_BASE_URL}/user/upload-photo/${registration}`, {
           method: "POST",
           headers: { "Authorization": `Bearer ${token}` },
           body: form
