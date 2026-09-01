@@ -9,8 +9,8 @@ import { useToast } from "../../../providers/ToastProvider";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
 
 export default function LoginPage() {
-  const [registration, setRegistration] = useState("");
-  const [password, setPassword] = useState("");
+  const [registration, setRegistration] = useState("10006");
+  const [password, setPassword] = useState("senha123");
   const [showPassword, setShowPassword] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [recoveryEmail, setRecoveryEmail] = useState("");
@@ -132,12 +132,15 @@ export default function LoginPage() {
         <p style={{ margin: "10px 0" }}>Este é um projeto de teste. Os dados são <strong>excluídos após o uso (banco de dados resetado a cada reinício)</strong>.</p>
         <div style={{ marginTop: "16px", padding: "12px", backgroundColor: "white", borderRadius: "8px", border: "1px solid #dcfce7", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "10px" }}>
           <div>
-            <span style={{ fontSize: "12px", color: "#15803d", textTransform: "uppercase", fontWeight: "bold" }}>Matrícula Admin</span>
-            <p style={{ margin: "4px 0", fontSize: "15px", fontFamily: "monospace" }}>10006</p>
+            <span style={{ fontSize: "12px", color: "#15803d", textTransform: "uppercase", fontWeight: "bold" }}>Matrículas Disponíveis</span>
+            <p style={{ margin: "4px 0", fontSize: "14px", fontFamily: "monospace" }}>
+              <strong>Admin:</strong> 10006<br/>
+              <strong>Técnicos:</strong> 10001, 10002, 10003, 10004
+            </p>
           </div>
           <div>
             <span style={{ fontSize: "12px", color: "#15803d", textTransform: "uppercase", fontWeight: "bold" }}>Senha Padrão</span>
-            <p style={{ margin: "4px 0", fontSize: "15px", fontFamily: "monospace" }}>Troca123</p>
+            <p style={{ margin: "4px 0", fontSize: "15px", fontFamily: "monospace" }}>senha123</p>
           </div>
         </div>
       </div>
