@@ -1,0 +1,8 @@
+{
+  "liveUrl": "https://siva-ig31.onrender.com/login",
+  "imagesCount": 0,
+  "technologies": {
+    "frontend": ["React", "Next.js", "TypeScript", "Leaflet"],
+    "backend": ["Java", "Spring Boot", "MySQL", "Flyway"]
+  }
+}
