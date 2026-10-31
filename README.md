@@ -2,7 +2,7 @@
 
 > O SIVA é um sistema completo (Full-Stack) focado no gerenciamento de frotas, controle de viagens, rastreamento de chamados e manutenção preventiva de veículos. O sistema conta com painéis gerenciais, mapas de acompanhamento em tempo real e controle de acessos (Gestor vs. Técnico).
 
-[🔗 Acesse o projeto em produção](https://siva-ig31.onrender.com/login)
+[🔗 Acesse o projeto em produção](https://niuansouza.duckdns.org/siva/)
 
 **Aviso de Origem:** Este projeto é um *fork* e uma evolução independente do repositório original desenvolvido para fins acadêmicos na FATEC. O projeto original pode ser encontrado aqui: [Bifrost-Connect/API3-BACK](https://github.com/Bifrost-Connect/API3-BACK).
 

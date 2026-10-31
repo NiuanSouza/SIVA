@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: '/siva',
   async rewrites() {
-    // Usa a URL de produção se existir, caso contrário aponta para o localhost
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://siva_backend:8083";
     
     return [
       {
