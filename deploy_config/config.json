@@ -1,9 +1,19 @@
 {
   "orderId": 5,
   "liveUrl": "https://niuansouza.duckdns.org/siva/",
-  "imagesCount": 0,
+  "imagesCount": 5,
   "technologies": {
-    "frontend": ["React", "Next.js", "TypeScript", "Leaflet"],
-    "backend": ["Java", "Spring Boot", "MySQL", "Flyway"]
+    "frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Leaflet"
+    ],
+    "backend": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Flyway"
+    ]
   }
 }
